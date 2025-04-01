@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root"
+    android:paddingBottom="@dimen/dp_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/ifc_iv_head"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:src="@drawable/head_01"
+        android:layout_margin="@dimen/dp_10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ifc_tv_name"
+        />
+
+    <TextView
+        android:id="@+id/ifc_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:textSize="@dimen/text_14"
+        android:textColor="@color/light_black"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_5"
+        app:layout_constraintLeft_toRightOf="@+id/ifc_iv_head"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/ifc_tv_message"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="wrap_content"
+        android:text="测试11111111111111111111111111111222222223333456"
+        android:textSize="@dimen/text_12"
+        android:layout_marginRight="@dimen/dp_10"
+        app:layout_constraintStart_toStartOf="@+id/ifc_tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/ifc_tv_name"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+    <TextView
+        android:id="@+id/ifc_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间"
+        android:textSize="@dimen/text_12"
+        app:layout_constraintStart_toStartOf="@+id/ifc_tv_message"
+        app:layout_constraintTop_toBottomOf="@+id/ifc_tv_message"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintRight_toLeftOf="@+id/ifc_tv_delet"
+        />
+
+    <TextView
+        android:id="@+id/ifc_tv_delet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:textSize="@dimen/text_12"
+        android:textColor="@color/blue_shadow_80"
+        app:layout_constraintTop_toTopOf="@+id/ifc_tv_time"
+        app:layout_constraintBottom_toBottomOf="@+id/ifc_tv_time"
+        app:layout_constraintLeft_toRightOf="@+id/ifc_tv_time"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/ifc_iv_like"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:src="@mipmap/love_unclick"
+
+        app:layout_constraintTop_toTopOf="@+id/ifc_tv_time"
+        app:layout_constraintBottom_toBottomOf="@+id/ifc_tv_time"
+        app:layout_constraintRight_toLeftOf="@+id/ifc_tv_like_number"
+        />
+
+    <TextView
+        android:id="@+id/ifc_tv_like_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1111"
+        android:textSize="@dimen/text_12"
+        app:layout_constraintEnd_toEndOf="@+id/ifc_tv_message"
+        app:layout_constraintTop_toTopOf="@+id/ifc_tv_time"
+        app:layout_constraintBottom_toBottomOf="@+id/ifc_tv_time"
+        app:layout_constraintLeft_toRightOf="@+id/ifc_iv_like"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ifc_cl_write"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        app:layout_constraintStart_toStartOf="@+id/ifc_iv_head"
+        app:layout_constraintEnd_toEndOf="@+id/ifc_tv_message"
+        app:layout_constraintTop_toBottomOf="@+id/ifc_tv_time"
+        android:layout_marginTop="@dimen/dp_10"
+        >
+
+        <EditText
+            android:id="@+id/ifc_et_comment"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinner_high32"
+            android:hint="发布您的评论"
+            android:textSize="@dimen/text_12"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#e6e6e6"
+            android:layout_marginRight="@dimen/dp_5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/ifc_btn_sned_comment"
+            />
+
+        <Button
+            android:id="@+id/ifc_btn_sned_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spinner_high"
+            android:text="发布"
+            style="@style/button_long"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/tab_selected"
+            app:layout_constraintTop_toTopOf="@+id/ifc_et_comment"
+            app:layout_constraintBottom_toBottomOf="@+id/ifc_et_comment"
+            app:layout_constraintLeft_toRightOf="@+id/ifc_et_comment"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ifc_cl_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="#e6e6e6"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_25"
+        app:layout_constraintStart_toStartOf="@+id/ifc_iv_head"
+        app:layout_constraintEnd_toEndOf="@+id/ifc_tv_message"
+        app:layout_constraintTop_toBottomOf="@+id/ifc_cl_write"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <ImageView
+            android:id="@+id/ifc_iv_comment_message"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:src="@mipmap/message_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/ifc_rlv"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ifc_rlv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ifc_iv_comment_message"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/light_black"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/ifc_cl_comment"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

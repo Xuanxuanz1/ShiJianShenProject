@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_background">#0187EB</color>
+    <color name="button_long_background">#0187EB</color>
+    <color name="button_long_text">#F5F5F5</color>
+    <color name="button_text_white">#F5F5F5</color>
+    <color name="explain_text_background">#D3D3D3</color>
+    <color name="explain_text_color_1">#A9A9A9</color>
+    <color name="explain_text_color_2">#696969</color>
+    <color name="light_red">#FB6565</color>
+    <color name="ripple_color">#CCC</color>
+    <color name="widget_enable_false">#A9A9A9</color>
+    <color name="widget_press_true_green">#046DBC</color>
+    <dimen name="add_content_text_10">@dimen/text_10</dimen>
+    <dimen name="add_content_text_12">@dimen/text_12</dimen>
+    <dimen name="add_content_text_14">@dimen/text_14</dimen>
+    <dimen name="bill_table_grid_igh">@dimen/dp_20</dimen>
+    <dimen name="button_high">@dimen/dp_30</dimen>
+    <dimen name="button_long_high">@dimen/dp_35</dimen>
+    <dimen name="button_red_high">@dimen/dp_30</dimen>
+    <dimen name="content_text_12">@dimen/text_12</dimen>
+    <dimen name="content_text_14">@dimen/text_14</dimen>
+    <dimen name="content_text_16">@dimen/text_16</dimen>
+    <dimen name="edittext_high">@dimen/dp_36</dimen>
+    <dimen name="edittext_high32">@dimen/dp_32</dimen>
+    <dimen name="spinner_high">@dimen/dp_30</dimen>
+    <dimen name="spinner_high32">@dimen/dp_32</dimen>
+    <dimen name="table_grid_igh">@dimen/dp_30</dimen>
+    <dimen name="title_bar_high">@dimen/dp_32</dimen>
+    <dimen name="title_fence_button_high">@dimen/dp_38</dimen>
+    <dimen name="title_text_12">@dimen/text_12</dimen>
+    <dimen name="title_text_14">@dimen/text_14</dimen>
+    <dimen name="title_text_16">@dimen/text_16</dimen>
+    <dimen name="title_text_18">@dimen/text_18</dimen>
+    <dimen name="title_text_20">@dimen/text_20</dimen>
+    <dimen name="widget_radius">@dimen/dp_3</dimen>
+    <integer name="anim_duration_long">350</integer>
+    <integer name="anim_duration_short">300</integer>
+    <string name="app_name">base</string>
+    <style name="explain_text_1">
+        <item name="android:textColor">@color/explain_text_color_1</item>
+        <item name="android:textSize">@dimen/add_content_text_12</item>
+    </style>
+    <style name="progressAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/progress_in</item>
+        <item name="android:windowExitAnimation">@anim/progress_out</item>
+    </style>
+</resources>

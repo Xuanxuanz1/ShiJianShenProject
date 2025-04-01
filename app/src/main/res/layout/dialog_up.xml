@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/au_cl_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/dp_5">
+
+        <ImageView
+            android:id="@+id/au_iv_close"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@drawable/ic_clear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/au_cl_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp_1"
+        app:layout_constraintTop_toBottomOf="@+id/au_cl_close"
+        >
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/av_iv_head"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_120"
+            android:src="@drawable/up_head"
+            app:roundPercent="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/au_tv_name_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教练："
+            android:textSize="@dimen/text_18"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:textColor="@color/light_black"
+            app:layout_constraintLeft_toRightOf="@+id/av_iv_head"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/au_tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="小波健身"
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/light_black"
+            app:layout_constraintTop_toTopOf="@+id/au_tv_name_hint"
+            app:layout_constraintBottom_toBottomOf="@+id/au_tv_name_hint"
+            app:layout_constraintLeft_toRightOf="@+id/au_tv_name_hint"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/au_tv_sex_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别："
+            android:textSize="@dimen/text_18"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/light_black"
+            app:layout_constraintTop_toBottomOf="@+id/au_tv_name_hint"
+            app:layout_constraintStart_toStartOf="@+id/au_tv_name_hint"
+            />
+
+        <TextView
+            android:id="@+id/au_tv_sex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/light_black"
+            app:layout_constraintTop_toTopOf="@+id/au_tv_sex_hint"
+            app:layout_constraintBottom_toBottomOf="@+id/au_tv_sex_hint"
+            app:layout_constraintLeft_toRightOf="@+id/au_tv_sex_hint"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/au_tv_height_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身高："
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/light_black"
+            app:layout_constraintTop_toBottomOf="@+id/au_tv_sex_hint"
+            android:layout_marginTop="@dimen/dp_5"
+            app:layout_constraintStart_toStartOf="@+id/au_tv_sex_hint"
+            />
+
+        <TextView
+            android:id="@+id/au_tv_height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="181 cm"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_18"
+            app:layout_constraintTop_toTopOf="@+id/au_tv_height_hint"
+            app:layout_constraintBottom_toBottomOf="@+id/au_tv_height_hint"
+            app:layout_constraintLeft_toRightOf="@+id/au_tv_height_hint"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/au_tv_weight_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="体重："
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/light_black"
+            android:layout_marginTop="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@+id/au_tv_height_hint"
+            app:layout_constraintStart_toStartOf="@+id/au_tv_height_hint"
+            />
+
+        <TextView
+            android:id="@+id/au_tv_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="140 kg"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_18"
+            app:layout_constraintTop_toTopOf="@+id/au_tv_weight_hint"
+            app:layout_constraintBottom_toBottomOf="@+id/au_tv_weight_hint"
+            app:layout_constraintLeft_toRightOf="@+id/au_tv_weight_hint"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/au_cl_brief"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/white"
+        android:padding="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@+id/au_cl_detail"
+        >
+
+        <TextView
+            android:id="@+id/au_tv_brief_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="教练简介"
+            android:textSize="@dimen/text_20"
+            android:textColor="@color/light_black"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/au_tv_brief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我叫小波，我是波兰人。这个频道是关于科学的健身，运动。微博：Kamil小波健身"
+            android:maxLines="1"
+            android:textSize="@dimen/text_15"
+            android:layout_marginTop="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@+id/au_tv_brief_hint"
+            />
+
+        <TextView
+            android:id="@+id/au_tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展开全部"
+            android:textSize="@dimen/text_16"
+            android:textColor="#5e90b8"
+            android:layout_marginTop="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@+id/au_tv_brief"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

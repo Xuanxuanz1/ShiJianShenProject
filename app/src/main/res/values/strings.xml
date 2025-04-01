@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">适健身</string>
+    <string name="login">登录页</string>
+    <string name="register">用户注册</string>
+    <string name="forget">忘记密码</string>
+
+    <string name="recommend">健身推荐</string>
+    <string name="recommend_details">每日精选推荐</string>
+
+    <string name="train">健身训练</string>
+    <string name="train_video">课程视频</string>
+    <string name="up_name">教练简介</string>
+    <string name="train_sport">健身项目训练</string>
+
+    <string name="find">发现</string>
+    <string name="find_circle">健身圈</string>
+    <string name="find_friend">寻找更多的好友</string>
+
+    <string name="user">个人主页</string>
+    <string name="change_password">修改密码</string>
+    <string name="change_user">修改个人信息</string>
+    <string name="sport">今日步数打卡</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about">关于我们</string>
+    <string name="shop">积分商城</string>
+
+    <string name="admin">管理员</string>
+    <string name="change_recommend">管理健身推荐资讯</string>
+    <string name="change_user_detail">管理用户</string>
+    <string name="change_video_class">管理健身课程</string>
+    <string name="manage_shop">管理积分商城</string>
+
+
+</resources>

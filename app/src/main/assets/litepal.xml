@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="shijianshen_db" />
+    <list>
+        <!--        这里是数据表-->
+        <mapping class="com.example.shijianshenapp.bean.UserBean"/>//bean类路径
+
+        <mapping class="com.example.shijianshenapp.bean.RecommendBean"/>
+
+        <mapping class="com.example.shijianshenapp.bean.RecommendDetailBean"/>
+
+        <mapping class="com.example.shijianshenapp.bean.TrainBean"/>
+
+        <mapping class="com.example.shijianshenapp.bean.ShopBean"/>
+    </list>
+    <!--这里是版本号，当数据实体类字段有变动时这里必须增大-->
+    <version value="9" />
+
+</litepal>

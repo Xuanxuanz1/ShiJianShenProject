@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/dmsag_iv_close"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:src="@drawable/ic_clear"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/dmsag_tv_title_hint"
+        />
+
+    <TextView
+        android:id="@+id/dmsag_tv_title_hint"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_30"
+        android:text="新增商品数据"
+        android:textSize="@dimen/text_18"
+        android:textColor="@color/light_black"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/dmsag_iv_close"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dmsag_cl_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/dmsag_iv_close"
+        >
+
+        <TextView
+            android:id="@+id/dmsag_tv_type_name_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品分类："
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/light_black"
+            app:layout_constraintTop_toTopOf="@+id/dmsag_sp_type_name"
+            app:layout_constraintBottom_toBottomOf="@+id/dmsag_sp_type_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dmsag_sp_type_name"
+            />
+
+        <Spinner
+            android:id="@+id/dmsag_sp_type_name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            style="@style/spinner_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/dmsag_tv_type_name_hint"
+            />
+
+        <TextView
+            android:id="@+id/dmsag_tv_goods_name_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称："
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintTop_toTopOf="@+id/dmsag_et_goods_name"
+            app:layout_constraintBottom_toBottomOf="@+id/dmsag_et_goods_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dmsag_et_goods_name"
+            />
+
+        <EditText
+            android:id="@+id/dmsag_et_goods_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/light_black"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/dp_5"
+            app:layout_constraintLeft_toRightOf="@+id/dmsag_tv_goods_name_hint"
+            app:layout_constraintTop_toBottomOf="@+id/dmsag_sp_type_name"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dmsag_cl_goods_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@+id/dmsag_cl_goods_name"
+        >
+
+        <TextView
+            android:id="@+id/dmsag_tv_goods_qty_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品总数："
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintTop_toTopOf="@+id/dmsag_et_goods_qty"
+            app:layout_constraintBottom_toBottomOf="@+id/dmsag_et_goods_qty"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dmsag_et_goods_qty"
+            />
+
+        <EditText
+            android:id="@+id/dmsag_et_goods_qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/light_black"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@+id/dmsag_tv_goods_qty_hint"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dmsag_cl_goods_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@+id/dmsag_cl_goods_qty"
+        >
+
+        <TextView
+            android:id="@+id/dmsag_tv_goods_price_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兑换所需积分："
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintTop_toTopOf="@+id/dmsag_et_goods_price"
+            app:layout_constraintBottom_toBottomOf="@+id/dmsag_et_goods_price"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dmsag_et_goods_price"
+            />
+
+        <EditText
+            android:id="@+id/dmsag_et_goods_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/light_black"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@+id/dmsag_tv_goods_price_hint"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/dmsag_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_long_high"
+        style="@style/button_long"
+        android:background="@color/tab_selected"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/dmsag_cl_goods_price"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

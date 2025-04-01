@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:background="@color/main_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/item_tv_train_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="测试"
+            android:textSize="@dimen/text_18"
+            android:maxLines="1"
+            android:textColor="@color/light_black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/item_tv_train_time"
+            />
+
+        <ImageView
+            android:id="@+id/iv_ok"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:src="@mipmap/ok"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/item_tv_train_name"
+            app:layout_constraintRight_toLeftOf="@+id/item_tv_train_time"
+            />
+
+        <TextView
+            android:id="@+id/item_tv_train_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/light_black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/iv_ok"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/dp_1"
+        />
+
+</LinearLayout>

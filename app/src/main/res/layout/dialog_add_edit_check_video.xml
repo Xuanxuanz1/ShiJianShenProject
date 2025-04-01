@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_10"
+    >
+
+    <ImageView
+        android:id="@+id/decv_iv_close"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:src="@drawable/ic_clear"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/decv_tv_title_hint"
+        />
+
+    <TextView
+        android:id="@+id/decv_tv_title_hint"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_30"
+        android:text="上传新视频"
+        android:textSize="@dimen/text_18"
+        android:textColor="@color/light_black"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/decv_iv_close"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/decv_cl_video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/decv_iv_close"
+        >
+
+        <TextView
+            android:id="@+id/decv_tv_video_title_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频标题："
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintTop_toTopOf="@+id/decv_et_video_title"
+            app:layout_constraintBottom_toBottomOf="@+id/decv_et_video_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/decv_et_video_title"
+            />
+
+        <EditText
+            android:id="@+id/decv_et_video_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/light_black"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@+id/decv_tv_video_title_hint"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/decv_cl_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@+id/decv_cl_video_title"
+        >
+
+        <TextView
+            android:id="@+id/decv_tv_message_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频简介："
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintTop_toTopOf="@+id/decv_et_message"
+            app:layout_constraintBottom_toBottomOf="@+id/decv_et_message"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/decv_et_message"
+            />
+
+        <EditText
+            android:id="@+id/decv_et_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/light_black"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@+id/decv_tv_message_hint"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/decv_cl_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@+id/decv_cl_message"
+        >
+
+        <TextView
+            android:id="@+id/decv_tv_time_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频时间："
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintTop_toTopOf="@+id/decv_et_time"
+            app:layout_constraintBottom_toBottomOf="@+id/decv_et_time"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/decv_et_time"
+            />
+
+        <EditText
+            android:id="@+id/decv_et_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/light_black"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@+id/decv_tv_time_hint"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/decv_cl_like_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@+id/decv_cl_time"
+        >
+
+        <TextView
+            android:id="@+id/decv_tv_like_number_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频点赞数："
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintTop_toTopOf="@+id/decv_et_like_number"
+            app:layout_constraintBottom_toBottomOf="@+id/decv_et_like_number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/decv_et_like_number"
+            />
+
+        <EditText
+            android:id="@+id/decv_et_like_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/light_black"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@+id/decv_tv_like_number_hint"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/decv_cl_watch_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@+id/decv_cl_like_number"
+        >
+
+        <TextView
+            android:id="@+id/decv_tv_watch_number_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频观看数："
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintTop_toTopOf="@+id/decv_et_watch_number"
+            app:layout_constraintBottom_toBottomOf="@+id/decv_et_watch_number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/decv_et_watch_number"
+            />
+
+        <EditText
+            android:id="@+id/decv_et_watch_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/light_black"
+            android:maxLines="1"
+            app:layout_constraintLeft_toRightOf="@+id/decv_tv_watch_number_hint"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/decv_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_long_high"
+        style="@style/button_long"
+        android:background="@color/tab_selected"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/decv_cl_watch_number"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

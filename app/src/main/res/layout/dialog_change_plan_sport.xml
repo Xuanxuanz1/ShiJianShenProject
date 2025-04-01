@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dp_5"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/dcps_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="修改步数计划"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/light_black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/acps_et_change_plan_sport"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner_high"
+        style="@style/spinner_1"
+        android:background="#ebe8db"
+        android:text=""
+        android:textColor="@color/light_black"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@+id/dcps_tv_title"
+        />
+
+    <Button
+        android:id="@+id/dcps_btn_cancle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spinner_high"
+        style="@style/button_long"
+        android:text="取消"
+        android:textSize="@dimen/text_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="@color/tab_selected"
+        app:layout_constraintTop_toBottomOf="@+id/acps_et_change_plan_sport"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/dcps_btn_submit"
+        />
+
+    <Button
+        android:id="@+id/dcps_btn_submit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spinner_high"
+        style="@style/button_long"
+        android:background="@color/tab_selected"
+        android:text="保存"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintTop_toTopOf="@+id/dcps_btn_cancle"
+        app:layout_constraintBottom_toBottomOf="@+id/dcps_btn_cancle"
+        app:layout_constraintLeft_toRightOf="@+id/dcps_btn_cancle"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

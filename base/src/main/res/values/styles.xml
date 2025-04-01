@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    加载框进入、退出动画-->
+    <style name="progressAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/progress_in</item>
+        <item name="android:windowExitAnimation">@anim/progress_out</item>
+    </style>
+
+
+    <!--补充说明字1-->
+    <style name="explain_text_1">
+        <item name="android:textColor">@color/explain_text_color_1</item>
+        <item name="android:textSize">@dimen/add_content_text_12</item>
+    </style>
+</resources>

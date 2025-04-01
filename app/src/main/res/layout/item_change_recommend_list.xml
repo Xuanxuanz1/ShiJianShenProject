@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/root"
+    >
+
+    <TextView
+        android:id="@+id/icrl_tv_title"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="match_parent"
+        android:text="资讯标题"
+        android:maxLines="1"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_18"
+        android:gravity="center"
+        />
+
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/icrl_tv_edit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="编辑"
+        android:textSize="@dimen/text_18"
+        android:textColor="@color/light_black"
+        android:gravity="center"
+        />
+
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/icrl_tv_delet"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="删除"
+        android:textSize="@dimen/text_18"
+        android:textColor="@color/light_black"
+        android:gravity="center"
+        />
+
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        />
+
+</LinearLayout>

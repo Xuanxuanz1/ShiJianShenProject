@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.login.LoginActivity">
+
+    <TextView
+        android:id="@+id/al_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="适健身，选择适合自己的健身！"
+        android:textSize="@dimen/text_20"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/al_iv_head"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@+id/al_tv_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/head_01"
+        app:roundPercent="0.2"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/al_el_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/al_iv_head"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_30"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/al_et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp_30"
+            android:background="#ebe8db"
+            android:hint="请输入账号/用户名"
+            android:imeOptions="actionNext"
+            android:textSize="@dimen/text_16"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/al_el_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/al_el_user_name"
+        app:layout_constraintStart_toStartOf="@+id/al_el_user_name"
+        android:minHeight="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/al_et_user_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ebe8db"
+            android:minHeight="@dimen/dp_30"
+            android:hint="请输入密码"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/al_ck_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记住密码"
+        android:layout_marginLeft="@dimen/dp_26"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintTop_toBottomOf="@+id/al_el_user_password"
+        app:layout_constraintStart_toStartOf="@+id/al_tv_title"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+    <Button
+        android:id="@+id/al_btn_login"
+        style="@style/button_long"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:text="登录"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintTop_toBottomOf="@+id/al_ck_remember"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/al_btn_login"
+        app:layout_constraintStart_toStartOf="@id/al_btn_login"
+        >
+
+        <TextView
+            android:id="@+id/al_tv_lose_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="忘记密码"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_16"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/al_tv_new_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintHorizontal_weight="1"
+            android:text="新用户注册"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/light_black"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_20"
+            />
+
+    </LinearLayout>
+
+    <com.wayww.edittextfirework.FireworkView
+        android:id="@+id/fire_work1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <com.wayww.edittextfirework.FireworkView
+        android:id="@+id/fire_work2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/al_tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="day"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="@dimen/dp_120"
+        />
+
+    <TextView
+        android:id="@+id/al_tv_night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="night"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/light_black"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/dp_120"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

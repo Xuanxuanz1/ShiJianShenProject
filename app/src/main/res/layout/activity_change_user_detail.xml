@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".ui.admin.changeuserdetail.ChangeUserDetailActivity">
+
+    <include
+        layout="@layout/app_title"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/acud_cl_user_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/cl_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/acud_cl_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/acud_tv_user_name_hint"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/table_grid_igh"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/light_black"
+                android:text="用户名"
+                android:padding="@dimen/dp_5"
+                android:background="@color/white"
+                android:textSize="@dimen/text_14"
+                android:layout_marginRight="@dimen/dp_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/acud_tv_user_identity_hint"
+                />
+
+            <TextView
+                android:id="@+id/acud_tv_user_identity_hint"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/table_grid_igh"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/light_black"
+                android:text="身份属性"
+                android:padding="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_1"
+                android:background="@color/white"
+                android:textSize="@dimen/text_14"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/acud_tv_user_name_hint"
+                app:layout_constraintRight_toLeftOf="@+id/acud_tv_shop_integration_hint"
+                />
+
+            <TextView
+                android:id="@+id/acud_tv_shop_integration_hint"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/table_grid_igh"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/light_black"
+                android:text="用户积分"
+                android:padding="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_1"
+                android:background="@color/white"
+                android:textSize="@dimen/text_14"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/acud_tv_user_identity_hint"
+                app:layout_constraintRight_toLeftOf="@+id/acud_tv_change_hint"
+                />
+
+            <TextView
+                android:id="@+id/acud_tv_change_hint"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/table_grid_igh"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/light_black"
+                android:padding="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_1"
+                android:background="@color/white"
+                android:textSize="@dimen/text_14"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/acud_tv_shop_integration_hint"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/acud_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/acud_cl_table"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

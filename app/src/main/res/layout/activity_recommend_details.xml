@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.recommend.details.RecommendDetailsActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        layout="@layout/app_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/ard_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试标题"
+        android:textSize="@dimen/text_20"
+        android:textColor="@color/light_black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/cl_title"
+        />
+
+    <ImageView
+        android:id="@+id/ard_iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:visibility="gone"
+        android:src="@drawable/recommend_head_1"
+        app:layout_constraintTop_toBottomOf="@+id/ard_tv_title"
+        />
+
+    <TextView
+        android:id="@+id/ard_tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1111"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintTop_toBottomOf="@+id/ard_iv_img"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

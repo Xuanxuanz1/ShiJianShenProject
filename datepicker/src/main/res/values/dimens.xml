@@ -1,0 +1,5 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="picker_view_height">@dimen/dp_160</dimen>
+    <dimen name="date_unit_text_size">@dimen/text_18</dimen>
+</resources>

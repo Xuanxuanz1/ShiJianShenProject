@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/root">
+
+    <TextView
+        android:id="@+id/isgl_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        android:background="@color/main_bg"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/isgl_cl_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@+id/isgl_tv_title"
+        >
+
+        <ImageView
+            android:id="@+id/isgl_iv_img"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:src="@drawable/head_05"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/isgl_tv_goods_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:textSize="@dimen/text_13"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/light_black"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/isgl_iv_img"
+            app:layout_constraintRight_toLeftOf="@+id/isgl_btn_buy"
+            />
+
+        <TextView
+            android:id="@+id/isgl_tv_qty_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="库存数："
+            android:textColor="#f89155"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_12"
+            android:layout_marginTop="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@+id/isgl_tv_goods_name"
+            app:layout_constraintLeft_toLeftOf="@+id/isgl_tv_goods_name"
+            />
+
+        <TextView
+            android:id="@+id/isgl_tv_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9999"
+            android:textStyle="bold"
+            android:textColor="#f89155"
+            app:layout_constraintTop_toTopOf="@+id/isgl_tv_qty_hint"
+            app:layout_constraintBottom_toBottomOf="@+id/isgl_tv_qty_hint"
+            app:layout_constraintLeft_toRightOf="@+id/isgl_tv_qty_hint"
+            />
+
+        <Button
+            android:id="@+id/isgl_btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/shop_button"
+            android:text="1积分"
+            android:textColor="#282e55"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/isgl_iv_img"
+            app:layout_constraintBottom_toBottomOf="@+id/isgl_iv_img"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

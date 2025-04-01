@@ -1,0 +1,69 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 30
+
+    defaultConfig {
+        applicationId "com.example.shijianshenapp"
+        minSdk 21
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion 30
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-runtime:2.3.5'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+    //基础工具库
+    implementation 'com.github.vondear.RxTool:RxKit:2.3.9'
+
+    //UI库
+    implementation 'com.github.vondear.RxTool:RxUI:2.3.9'
+
+    //相机库
+    implementation 'com.github.vondear.RxTool:RxCamera:2.3.9'
+
+    //功能库（Zxing扫描与生成二维码条形码 支付宝 微信）
+    implementation 'com.github.vondear.RxTool:RxFeature:2.3.9'
+
+    //ArcGis For Android工具库（API：100.1以上版本）
+    implementation 'com.github.vondear.RxTool:RxArcGisKit:2.3.9'
+
+    api project(path: ':base')
+    api project(path: ':datepicker')
+    implementation project(path: ':edittextfirework')
+    implementation "org.litepal.android:core:3.0.0"
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+//    Glide
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+}

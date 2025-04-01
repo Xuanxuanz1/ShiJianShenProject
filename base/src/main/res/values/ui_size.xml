@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--标题栏高度-->
+    <dimen name="title_bar_high">@dimen/dp_32</dimen>
+    <dimen name="title_fence_button_high">@dimen/dp_38</dimen>
+
+    <!--长按钮高度-->
+    <dimen name="button_long_high">@dimen/dp_35</dimen>
+    <dimen name="button_high">@dimen/dp_30</dimen>
+    <dimen name="button_red_high">@dimen/dp_30</dimen>
+
+    <!--输入框高度-->
+    <dimen name="edittext_high">@dimen/dp_36</dimen>
+    <dimen name="edittext_high32">@dimen/dp_32</dimen>
+
+    <!--单项选择框高度-->
+    <dimen name="spinner_high">@dimen/dp_30</dimen>
+    <dimen name="spinner_high32">@dimen/dp_32</dimen>
+
+    <!--表格高度-->
+    <dimen name="table_grid_igh">@dimen/dp_30</dimen>
+    <dimen name="bill_table_grid_igh">@dimen/dp_20</dimen>
+    <!--标题-->
+    <dimen name="title_text_20">@dimen/text_20</dimen>
+    <dimen name="title_text_18">@dimen/text_18</dimen>
+    <dimen name="title_text_16">@dimen/text_16</dimen>
+    <dimen name="title_text_14">@dimen/text_14</dimen>
+    <dimen name="title_text_12">@dimen/text_12</dimen>
+
+    <!--内容-->
+    <dimen name="content_text_16">@dimen/text_16</dimen>
+    <dimen name="content_text_14">@dimen/text_14</dimen>
+    <dimen name="content_text_12">@dimen/text_12</dimen>
+
+    <!--附加内容-->
+    <dimen name="add_content_text_14">@dimen/text_14</dimen>
+    <dimen name="add_content_text_12">@dimen/text_12</dimen>
+    <dimen name="add_content_text_10">@dimen/text_10</dimen>
+
+    <dimen name="widget_radius">@dimen/dp_3</dimen>
+</resources>
